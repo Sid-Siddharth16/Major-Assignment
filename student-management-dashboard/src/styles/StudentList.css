@@ -1,0 +1,295 @@
+/* MAIN CONTAINER */
+.list-container {
+  max-width: 950px;
+  margin: 40px auto;
+  background: linear-gradient(135deg, #5c5ca7, #222240);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+  color: white;
+  position: relative;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Heading */
+.heading {
+  font-size: 28px;
+  color: #f3f3f3;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0; 
+}
+
+/* ADD BUTTON */
+.add-btn {
+  background: linear-gradient(135deg, #055513, #ff5722);
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s ease-in-out;
+}
+
+.add-btn:hover {
+  background: linear-gradient(135deg, #e68a00, #e64a19);
+  transform: scale(1.05);
+}
+/* BLUR BACKGROUND WHEN TOASTIFY IS ACTIVE*/
+.blur-background {
+  filter: blur(5px);
+  pointer-events: none; 
+  user-select: none;
+}
+
+
+.heading {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #f4f4f4;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.contain-head{
+  display: flex;
+  justify-content: center;
+}
+.contain-head button{
+  margin-bottom: 15px;
+}
+
+
+.add-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: linear-gradient(135deg, #ff9800, #ff5722);
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s ease-in-out;
+}
+
+.add-btn:hover {
+  background: linear-gradient(135deg, #e68a00, #e64a19);
+  transform: scale(1.05);
+}
+
+
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+  color: white;
+}
+
+
+.student-table th {
+  background: #3a3a5d;
+  color: #00d4ff;
+  font-weight: bold;
+  padding: 12px;
+  text-transform: uppercase;
+}
+
+
+.student-table td {
+  padding: 12px;
+  border-bottom: 1px solid #444;
+  max-width: 200px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+
+.student-table tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.student-table tr:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transition: 0.3s;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  color: #bbb;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+.empty-add-btn {
+  margin-top: 15px;
+  background: linear-gradient(135deg, #2196f3, #1e88e5);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.empty-add-btn:hover {
+  background: linear-gradient(135deg, #1976d2, #1565c0);
+  transform: scale(1.05);
+}
+
+/* === WRAPPING FOR LONG EMAILS === */
+.truncate {
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 200px;
+}
+
+/* === ACTION BUTTONS === */
+.actions {
+  display: flex;
+  gap: 12px;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 10px 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/* === EDIT BUTTON === */
+.edit-btn {
+  background: linear-gradient(135deg, #ffc107, #ff9800);
+  color: black;
+}
+
+.edit-btn:hover {
+  background: linear-gradient(135deg, #e0a800, #ff8c00);
+  transform: scale(1.05);
+}
+
+/* === DELETE BUTTON === */
+.delete-btn {
+  background: linear-gradient(135deg, #f44336, #d32f2f);
+  color: white;
+}
+
+.delete-btn:hover {
+  background: linear-gradient(135deg, #e53935, #b71c1c);
+  transform: scale(1.05);
+}
+
+/* === ANIMATIONS === */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.Toastify__toast-container {
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  z-index: 9999 !important;
+}
+
+
+.toastify-confirm {
+  width: 300px;
+  text-align: center;
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* === Toastify Buttons === */
+.toastify-btns {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.toastify-btn {
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: 0.3s ease-in-out;
+}
+
+/* Confirm Delete */
+.toastify-btn.confirm {
+  background: #dc3545;
+  color: white;
+}
+
+.toastify-btn.confirm:hover {
+  background: #c82333;
+}
+
+/* Cancel Button */
+.toastify-btn.cancel {
+  background: #6c757d;
+  color: white;
+}
+
+.toastify-btn.cancel:hover {
+  background: #5a6268;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.pagination-btn {
+  padding: 8px 12px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.pagination-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.page-info {
+  font-size: 14px;
+}
